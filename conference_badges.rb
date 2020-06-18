@@ -10,3 +10,8 @@ def batch_badge_creator(attendees)
     return badges
 
   end
+
+def assign_rooms(attendees)
+  room_assignments=[]
+  attendees.each do|room_assignments|
+    room_assignments.push("")
