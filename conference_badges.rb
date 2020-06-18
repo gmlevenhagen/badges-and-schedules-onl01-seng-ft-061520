@@ -3,12 +3,8 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-    badges=[]
-    attendees.each do|badge|
-    badges.push("Hello, my name is #{badge}.")
-    end
-    return badges
-
+    attendees.collect do |name|
+      badge_maker(name)
   end
 
 def assign_rooms(attendees)
