@@ -3,10 +3,10 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-  attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-  count = 0
-  while count <= attendees.length-1
-    puts badge_maker
-    count += 1
+    badges=[]
+    attendees.each do|badge|
+    badges.push("Hello, my name is #{badge}.")
+    end
+    return badges
+
   end
-  
